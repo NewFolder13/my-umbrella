@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "my-umbrella:build:production"
+              "buildTarget": "my-umbrella:build:production"
             },
             "development": {
-              "browserTarget": "my-umbrella:build:development"
+              "buildTarget": "my-umbrella:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-umbrella:build"
+            "buildTarget": "my-umbrella:build"
           }
         },
         "test": {
