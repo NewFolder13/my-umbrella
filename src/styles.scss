@@ -2,3 +2,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  transition-duration: .25s;
+  transition-property: color, background-color, border;
+}
+
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-5 bg-purple-500 text-white font-mono inline-flex items-center gap-2 leading-3 font-semibold rounded-full shadow-md hover:bg-purple-600 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
+  }
+}
